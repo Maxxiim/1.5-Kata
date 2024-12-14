@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
 @font-face {
   font-family: "TT";
   src: url("TTLakes-Regular.eot");
@@ -159,12 +160,12 @@ body {
 }
 
 .sidebar__nav {
-  margin-bottom: 100px;
+  margin-bottom: 265px;
 }
 
 .sidebar__nav-list-item {
   max-width: 220px;
-  margin-bottom: 32px;
+  margin-bottom: 39px;
   position: relative;
   margin-left: -15px;
   padding-left: 15px;
@@ -196,7 +197,7 @@ body {
 .sidebar__footer-menu {
   display: flex;
   gap: 16px;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 .sidebar__footer-phone {
@@ -273,8 +274,10 @@ body {
 }
 
 .sidebar__footer-call {
-  margin-bottom: 40px;
-  max-width: 210px;
+  font-family: "Russo One", sans-serif;
+  font-weight: 700;
+  margin-bottom: 45px;
+  max-width: 220px;
   font-size: 24px;
   line-height: 32px;
   color: rgb(27, 28, 33);
@@ -284,27 +287,28 @@ body {
   color: #3ede9e;
 }
 
-.sidebar__footer-list {
+.sidebar__footer-lang {
   display: flex;
 }
 
-.sidebar__footer-list-item {
+.sidebar__footer-lang-item {
+  text-transform: uppercase;
   cursor: pointer;
   color: rgb(27, 28, 33);
   margin-right: 7px;
   transition: all 0.2s ease-in-out;
 }
-.sidebar__footer-list-item:hover {
+.sidebar__footer-lang-item:hover {
   color: #3ede9e;
 }
-.sidebar__footer-list-item:last-child {
+.sidebar__footer-lang-item:last-child {
   margin-right: 0;
 }
 
-.sidebar__footer-list-item_active {
+.sidebar__footer-lang-item_active {
   color: rgb(126, 126, 130);
 }
-.sidebar__footer-list-item_active:hover {
+.sidebar__footer-lang-item_active:hover {
   color: rgb(126, 126, 130);
 }
 
