@@ -4,7 +4,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 
 .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 320px;
+    min-height: 100vh;
     box-shadow:
         16px 0 52px 0 rgba(14, 24, 80, 0.2),
         -2px 0 4px 0 rgba(69, 79, 126, 0.02);
@@ -237,7 +241,7 @@
 
 .sidebar__footer-call {
     font-family: 'Russo One', sans-serif;
-    
+
     font-weight: 700;
     margin-bottom: 45px;
     max-width: 220px;
