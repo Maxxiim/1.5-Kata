@@ -70,14 +70,14 @@ body {
 
 .sidebar {
   width: 320px;
-  min-height: 100vh;
-  box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2), -2px 0 4px 0 rgba(69, 79, 126, 0.02);
-  padding-top: 17px;
-  padding-bottom: 30px;
-}
-
-.sidebar__content {
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2), -2px 0 4px 0 rgba(69, 79, 126, 0.02);
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 17px;
 }
 
 .sidebar__menu {
@@ -167,13 +167,9 @@ body {
   fill: #fff;
 }
 
-.sidebar__nav {
-  margin-bottom: 265px;
-}
-
 .sidebar__nav-list-item {
   max-width: 220px;
-  margin-bottom: 39px;
+  margin-bottom: 32px;
   position: relative;
   margin-left: -15px;
   padding-left: 15px;
@@ -184,7 +180,7 @@ body {
   position: absolute;
   border-radius: 0 4px 4px 0;
   top: 0;
-  left: -5px;
+  left: 0;
   background: rgb(65, 246, 215);
   height: 100%;
   width: 4px;
