@@ -1,41 +1,49 @@
-@mixin media($breakpoint) {
-    @if $breakpoint =='phone' {
-        @media (max-width: 320px) {
-            @content;
-        }
+@use "sass:meta";
 
-        // для телефонов с шириной экрана 320px
+@mixin respond-to($breakpoint) {
+  @if $breakpoint ==xs {
+    @media (max-width: 480px) {
+      @content;
     }
+  }
 
-    @else if $breakpoint =='md' {
-        @media (max-width: 768px) {
-            @content;
-        }
-
-        // для планшетов и небольших экранов
+  @else if $breakpoint ==sm {
+    @media (max-width: 600px) {
+      @content;
     }
+  }
 
-    @else if $breakpoint =='lg' {
-        @media (max-width: 992px) {
-            @content;
-        }
-
-        // для экранов до 992px
+  @else if $breakpoint ==md {
+    @media (max-width: 768px) {
+      @content;
     }
+  }
 
-    @else if $breakpoint =='xl' {
-        @media (max-width: 1200px) {
-            @content;
-        }
-
-        // для больших экранов до 1200px
+  @else if $breakpoint ==md-lg {
+    @media (max-width: 992px) {
+      @content;
     }
+  }
 
-    @else if $breakpoint =='custom' {
-        @media (max-width: 1120px) {
-            @content;
-        }
-
-        // для экранов 1120px
+  @else if $breakpoint ==lg {
+    @media (max-width: 1100px) {
+      @content;
     }
+  }
+
+  @else if $breakpoint ==xl {
+    @media (max-width: 1200px) {
+      @content;
+    }
+  }
+
+  @else if meta.type-of($breakpoint)== "number" {
+    @media (min-width: #{$breakpoint}px) {
+      @content;
+    }
+  }
+
+  @else {
+    @warn "Breakpoint #{$breakpoint} is not defined.";
+  }
 }
