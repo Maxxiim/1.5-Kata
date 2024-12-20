@@ -63,15 +63,10 @@ body {
   padding: 0 15px;
 }
 
-.services {
-  background: rgb(255, 255, 255);
-}
-
-.container {
-  padding-top: 16px;
-}
-
 .services__title {
+  padding-left: 16px;
+  padding-top: 16px;
+  background: #fff;
   text-transform: uppercase;
   font-family: Arial, sans-serif;
   font-size: 16px;
@@ -79,35 +74,43 @@ body {
   font-weight: 500;
   color: rgb(126, 126, 130);
   max-width: 288px;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
-.services__content {
-  display: flex;
-  flex-direction: column;
+.services__carousel {
+  position: relative;
   background: rgb(248, 248, 248);
+  height: 100vh;
 }
 
-.services__list {
+.services__carousel-shadow {
+  z-index: 100;
+  position: absolute;
+  top: 0px;
+  right: -7px;
+  width: 24px;
+  height: 100px;
+  background: linear-gradient(0deg, rgb(248, 248, 248), rgba(248, 248, 248, 0));
+}
+
+.carousel__list {
+  position: relative;
+  padding-top: 16px;
   overflow: auto;
   display: flex;
-  align-items: center;
-  padding-top: 16px;
-  padding-bottom: 16px;
   padding-left: 16px;
-  margin-left: -16px;
+  margin-bottom: 16px;
 }
 
 .services__list-item {
+  width: 240px;
   margin-right: 16px;
+  padding: 20px 16px;
+  border-radius: 6px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-radius: 6px;
-  width: 240px;
-  background: #fff;
-  border: 1px solid rgb(234, 234, 234);
-  padding: 20px 16px;
+  border: 1px solid black;
 }
 @media (min-width: 320px) {
   .services__list-item {
@@ -121,22 +124,33 @@ body {
   justify-content: center;
   width: 40px;
   height: 40px;
-  background: none;
-  border: 2px solid #FF3E79;
+  border: 2px solid rgb(255, 62, 121);
   border-radius: 50%;
-  fill: #FF3E79;
 }
 
-.services__list-indicators {
+.services__list-item-btn-svg {
+  fill: rgb(255, 62, 121);
+}
+
+.carousel__list-points {
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
-.services__list-indicators-item {
+.carousel__list-points-point {
+  margin-right: 12px;
   width: 12px;
   height: 12px;
-  background: black;
+  background: rgb(221, 221, 221);
   border-radius: 50%;
+}
+.carousel__list-points-point:last-child {
+  margin-right: 0;
+}
+
+.carousel__list-points-point__active {
+  background: rgb(181, 182, 188);
 }
 
 /*# sourceMappingURL=style.css.map */
