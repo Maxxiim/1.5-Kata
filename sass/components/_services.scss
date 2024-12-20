@@ -18,6 +18,7 @@
 
 
 .services__carousel {
+    overflow: hidden;
     position: relative;
     background: rgb(248, 248, 248);
     height: 100vh;
@@ -27,22 +28,25 @@
     z-index: 100;
     position: absolute;
     top: 0px;
-    right: -7px;
-    width: 24px;
+    right: 0;
+    width: 14px;
     height: 100px;
     background: linear-gradient(0deg, rgb(248, 248, 248), rgba(248, 248, 248, 0));
 }
 
 .carousel__list {
     position: relative;
+    transition: transform 0.5s ease-in-out;
+    position: relative;
     padding-top: 16px;
-    overflow: auto;
+    overflow: visible;
     display: flex;
     padding-left: 16px;
     margin-bottom: 16px;
 }
 
-.services__list-item {
+.carousel__list-item {
+    flex: 0 0 80%;
     width: 240px;
     margin-right: 16px;
     padding: 20px 16px;
@@ -51,6 +55,10 @@
     align-items: center;
     justify-content: space-between;
     border: 1px solid black;
+
+    &:last-child {
+        margin-right: 0;
+    }
 
     @include respond-to(320) {
         min-width: 240px;
