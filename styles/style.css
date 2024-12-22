@@ -81,7 +81,6 @@ body {
   overflow: hidden;
   position: relative;
   background: rgb(248, 248, 248);
-  height: 100vh;
 }
 
 .services__carousel-shadow {
@@ -95,18 +94,18 @@ body {
 }
 
 .carousel__list {
+  will-change: transform;
   position: relative;
   transition: transform 0.5s ease-in-out;
   position: relative;
   padding-top: 16px;
-  overflow: visible;
   display: flex;
   padding-left: 16px;
   margin-bottom: 16px;
 }
 
 .carousel__list-item {
-  flex: 0 0 80%;
+  flex: 0 0 auto;
   width: 240px;
   margin-right: 16px;
   padding: 20px 16px;
@@ -114,18 +113,18 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: 1px solid black;
+  border: 1px solid #EAEAEA;
 }
 .carousel__list-item:last-child {
   margin-right: 0;
 }
 @media (min-width: 320px) {
   .carousel__list-item {
-    min-width: 240px;
+    max-width: 240px;
   }
 }
 
-.services__list-item-btn {
+.carousel__list-item-btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -133,10 +132,9 @@ body {
   height: 40px;
   border: 2px solid rgb(255, 62, 121);
   border-radius: 50%;
-}
-
-.services__list-item-btn-svg {
-  fill: rgb(255, 62, 121);
+  background-image: url("/img/services/dropdown.svg");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .carousel__list-points {
