@@ -20,7 +20,6 @@
     }
 }
 
-
 .services__carousel {
     width: 100%;
     overflow: hidden;
@@ -90,6 +89,7 @@
 }
 
 .carousel__list-item {
+    cursor: pointer;
     flex: 0 0 auto;
     width: 240px;
     margin-right: 16px;
@@ -98,10 +98,18 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid black;
+    border: 1px solid #EAEAEA;
 
     &:last-child {
         margin-right: 0;
+    }
+
+    &:hover .carousel__list-item-btn {
+        border: 2px solid rgb(255, 175, 199);
+    }
+
+    &:hover .carousel__list-item-btn-svg {
+        fill: rgb(255, 175, 199);
     }
 
     @include respond-to(320) {
@@ -111,7 +119,7 @@
     @include respond-to(768) {
         display: inline-flex;
         width: 224px;
-        margin-right: 30px;
+        margin-right: 20px;
         margin-bottom: 16px;
     }
 
@@ -125,6 +133,7 @@
 }
 
 .carousel__list-item-btn {
+    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -132,12 +141,16 @@
     height: 40px;
     border: 2px solid rgb(255, 62, 121);
     border-radius: 50%;
+    transition: all .2s ease-in-out;
 
-    background-image: url("/img/services/dropdown.svg");
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
+.carousel__list-item-btn-svg {
+    cursor: pointer;
+    fill: #FF3E79;
+    transition: all .2s ease-in-out;
+
+}
 
 .carousel__list-points {
     display: flex;
@@ -175,6 +188,16 @@
         margin-left: 32px;
         display: block;
         margin-bottom: 34px;
+
+        &:hover .services__dropdown-svg {
+            fill: #37b5a0;
+        }
+
+        &:hover .services__dropdown-text {
+            &:hover {
+                color: #FF3E79;
+            }
+        }
     }
 }
 
@@ -186,6 +209,8 @@
         display: inline-block;
         fill: #41F6D7;
         transition: transform .2s ease-in;
+        transition: all .2s ease-in-out;
+
     }
 }
 
@@ -203,5 +228,6 @@
         font-size: 16px;
         line-height: 24px;
         font-weight: 500;
+        transition: all .2s ease-in-out;
     }
 }
