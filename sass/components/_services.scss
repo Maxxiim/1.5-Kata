@@ -42,6 +42,8 @@
 }
 
 .carousel__list {
+    overflow: visible;
+    transform: translateX(0);
     will-change: transform;
     position: relative;
     transition: transform 0.5s ease-in-out;
