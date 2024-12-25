@@ -5,73 +5,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CPS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body>
 
     <div class="services">
-        <h1 class="services__title">Ремонт техники различных брендов</h1>
-
-        <div class="services__carousel">
-
-            <span class="services__carousel-shadow"></span>
-            <ul class="carousel__list">
-
-                <!-- brand Lenovo -->
-                <li class="carousel__list-item">
-                    <img src="./img/services/lenovo.svg" alt="Brand Lenovo">
-                    <button class="carousel__list-item-btn" aria-label="btn brand">
-                        <svg class="carousel__list-item-btn-svg" width="8" height="12" viewBox="0 0 8 12" fill="none"
+        <p class="services__title">
+            Ремонт техники различных брендов
+        </p>
+        <div class="swiper">
+            <span class="swiper-wrapper__shadow"></span>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./img/services/lenovo.svg" alt="logo Lenovo">
+                    <button class="swiper-slide__btn" aria-label="btn dropdown">
+                        <svg class="swiper-slide__btn-svg" width="8" height="12" viewBox="0 0 8 12" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
                                 d="M4.5 6L0.707106 2.20711C0.316582 1.81658 0.316582 1.18342 0.707107 0.792893L0.792893 0.707107C1.18342 0.316583 1.81658 0.316583 2.20711 0.707107L6.79289 5.29289C7.18342 5.68342 7.18342 6.31658 6.79289 6.70711L2.20711 11.2929C1.81658 11.6834 1.18342 11.6834 0.792893 11.2929L0.707107 11.2071C0.316583 10.8166 0.316583 10.1834 0.707107 9.79289L4.5 6Z"
-                                fill="" />
+                                fill="#FF3E79" />
                         </svg>
                     </button>
-                </li>
-
-                <!-- brand Samsung -->
-                <li class="carousel__list-item">
-                    <img src="./img/services/samsung.svg" alt="Brand Samsung">
-                    <button class="carousel__list-item-btn" aria-label="btn brand">
-                        <svg class="carousel__list-item-btn-svg" width="8" height="12" viewBox="0 0 8 12" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/services/samsung.svg" alt="logo Samsung">
+                    <button class="swiper-slide__btn" aria-label="btn dropdown">
+                        <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
                                 d="M4.5 6L0.707106 2.20711C0.316582 1.81658 0.316582 1.18342 0.707107 0.792893L0.792893 0.707107C1.18342 0.316583 1.81658 0.316583 2.20711 0.707107L6.79289 5.29289C7.18342 5.68342 7.18342 6.31658 6.79289 6.70711L2.20711 11.2929C1.81658 11.6834 1.18342 11.6834 0.792893 11.2929L0.707107 11.2071C0.316583 10.8166 0.316583 10.1834 0.707107 9.79289L4.5 6Z"
-                                fill="" />
+                                fill="#FF3E79" />
                         </svg>
                     </button>
-                </li>
-
-                <!-- brand Apple -->
-                <li class="carousel__list-item">
-                    <img src="./img/services/apple.svg" alt="Brand Apple">
-                    <button class="carousel__list-item-btn" aria-label="btn brand">
-                        <svg class="carousel__list-item-btn-svg" width="8" height="12" viewBox="0 0 8 12" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/services/apple.svg" alt="logo Apple">
+                    <button class="swiper-slide__btn" aria-label="btn dropdown">
+                        <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
                                 d="M4.5 6L0.707106 2.20711C0.316582 1.81658 0.316582 1.18342 0.707107 0.792893L0.792893 0.707107C1.18342 0.316583 1.81658 0.316583 2.20711 0.707107L6.79289 5.29289C7.18342 5.68342 7.18342 6.31658 6.79289 6.70711L2.20711 11.2929C1.81658 11.6834 1.18342 11.6834 0.792893 11.2929L0.707107 11.2071C0.316583 10.8166 0.316583 10.1834 0.707107 9.79289L4.5 6Z"
-                                fill="" />
+                                fill="#FF3E79" />
                         </svg>
                     </button>
-                </li>
+                </div>
 
-                <!-- brand Bosch -->
-                <li class="carousel__list-item">
-                    <img src="./img/services/bosch.svg" alt="Brand Bosch">
-                    <button class="carousel__list-item-btn" aria-label="btn brand">
-                        <svg class="carousel__list-item-btn-svg" width="8" height="12" viewBox="0 0 8 12" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
+                <div class="swiper-slide">
+                    <img src="./img/services/bosch.svg" alt="logo Bosch">
+                    <button class="swiper-slide__btn" aria-label="btn dropdown">
+                        <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
                                 d="M4.5 6L0.707106 2.20711C0.316582 1.81658 0.316582 1.18342 0.707107 0.792893L0.792893 0.707107C1.18342 0.316583 1.81658 0.316583 2.20711 0.707107L6.79289 5.29289C7.18342 5.68342 7.18342 6.31658 6.79289 6.70711L2.20711 11.2929C1.81658 11.6834 1.18342 11.6834 0.792893 11.2929L0.707107 11.2071C0.316583 10.8166 0.316583 10.1834 0.707107 9.79289L4.5 6Z"
-                                fill="" />
+                                fill="#FF3E79" />
                         </svg>
                     </button>
-                </li>
+                </div>
 
-                <!-- brand hp -->
-                <li class="carousel__list-item">
+                <div class="swiper-slide">
                     <svg width="39" height="39" enable-background="new 0 0 45 45" version="1.0" viewBox="0 0 1e3 999.98"
                         xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
                         <g transform="translate(-203.54 -212.7)">
@@ -80,109 +70,85 @@
                                 fill="#015294" />
                         </g>
                     </svg>
-                    <button class="carousel__list-item-btn" aria-label="btn brand">
-                        <svg class="carousel__list-item-btn-svg" width="8" height="12" viewBox="0 0 8 12" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
+                    <button class="swiper-slide__btn" aria-label="btn dropdown">
+                        <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
                                 d="M4.5 6L0.707106 2.20711C0.316582 1.81658 0.316582 1.18342 0.707107 0.792893L0.792893 0.707107C1.18342 0.316583 1.81658 0.316583 2.20711 0.707107L6.79289 5.29289C7.18342 5.68342 7.18342 6.31658 6.79289 6.70711L2.20711 11.2929C1.81658 11.6834 1.18342 11.6834 0.792893 11.2929L0.707107 11.2071C0.316583 10.8166 0.316583 10.1834 0.707107 9.79289L4.5 6Z"
-                                fill="" />
+                                fill="#FF3E79" />
                         </svg>
                     </button>
-                </li>
+                </div>
 
-                <!-- brand Acer -->
-                <li class="carousel__list-item">
-                    <img src="./img/services/acer.svg" alt="Brand Acer">
-                    <button class="carousel__list-item-btn" aria-label="btn brand">
-                        <svg class="carousel__list-item-btn-svg" width="8" height="12" viewBox="0 0 8 12" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
+                <div class="swiper-slide">
+                    <img src="./img/services/acer.svg" alt="logo Acer">
+                    <button class="swiper-slide__btn" aria-label="btn dropdown">
+                        <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
                                 d="M4.5 6L0.707106 2.20711C0.316582 1.81658 0.316582 1.18342 0.707107 0.792893L0.792893 0.707107C1.18342 0.316583 1.81658 0.316583 2.20711 0.707107L6.79289 5.29289C7.18342 5.68342 7.18342 6.31658 6.79289 6.70711L2.20711 11.2929C1.81658 11.6834 1.18342 11.6834 0.792893 11.2929L0.707107 11.2071C0.316583 10.8166 0.316583 10.1834 0.707107 9.79289L4.5 6Z"
-                                fill="" />
+                                fill="#FF3E79" />
                         </svg>
                     </button>
-                </li>
+                </div>
 
-                <!-- brand ViewSonic -->
-                <li class="carousel__list-item">
-                    <img src="./img/services/viewsonic.svg" alt="Brand ViewSonic">
-                    <button class="carousel__list-item-btn" aria-label="btn brand">
-                        <svg class="carousel__list-item-btn-svg" width="8" height="12" viewBox="0 0 8 12" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
+                <div class="swiper-slide">
+                    <img src="./img/services/viewsonic.svg" alt="logo Viewsonic">
+                    <button class="swiper-slide__btn" aria-label="btn dropdown">
+                        <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
                                 d="M4.5 6L0.707106 2.20711C0.316582 1.81658 0.316582 1.18342 0.707107 0.792893L0.792893 0.707107C1.18342 0.316583 1.81658 0.316583 2.20711 0.707107L6.79289 5.29289C7.18342 5.68342 7.18342 6.31658 6.79289 6.70711L2.20711 11.2929C1.81658 11.6834 1.18342 11.6834 0.792893 11.2929L0.707107 11.2071C0.316583 10.8166 0.316583 10.1834 0.707107 9.79289L4.5 6Z"
-                                fill="" />
+                                fill="#FF3E79" />
                         </svg>
                     </button>
-                </li>
+                </div>
 
-                <!-- brand Sony -->
-                <li class="carousel__list-item">
-                    <img src="./img/services/sony.svg" alt="Brand Sony">
-                    <button class="carousel__list-item-btn" aria-label="btn brand">
-                        <svg class="carousel__list-item-btn-svg" width="8" height="12" viewBox="0 0 8 12" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
+                <div class="swiper-slide">
+                    <img src="./img/services/sony.svg" alt="logo Sony">
+                    <button class="swiper-slide__btn" aria-label="btn dropdown">
+                        <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
                                 d="M4.5 6L0.707106 2.20711C0.316582 1.81658 0.316582 1.18342 0.707107 0.792893L0.792893 0.707107C1.18342 0.316583 1.81658 0.316583 2.20711 0.707107L6.79289 5.29289C7.18342 5.68342 7.18342 6.31658 6.79289 6.70711L2.20711 11.2929C1.81658 11.6834 1.18342 11.6834 0.792893 11.2929L0.707107 11.2071C0.316583 10.8166 0.316583 10.1834 0.707107 9.79289L4.5 6Z"
-                                fill="" />
+                                fill="#FF3E79" />
                         </svg>
                     </button>
-                </li>
+                </div>
 
-                <!-- brand Samsung -->
-                <li class="carousel__list-item">
-                    <img src="./img/services/samsung.svg" alt="Brand Samsung">
-                    <button class="carousel__list-item-btn" aria-label="btn brand">
-                        <svg class="carousel__list-item-btn-svg" width="8" height="12" viewBox="0 0 8 12" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
+                <div class="swiper-slide">
+                    <img src="./img/services/lenovo.svg" alt="logo Lenovo">
+                    <button class="swiper-slide__btn" aria-label="btn dropdown">
+                        <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
                                 d="M4.5 6L0.707106 2.20711C0.316582 1.81658 0.316582 1.18342 0.707107 0.792893L0.792893 0.707107C1.18342 0.316583 1.81658 0.316583 2.20711 0.707107L6.79289 5.29289C7.18342 5.68342 7.18342 6.31658 6.79289 6.70711L2.20711 11.2929C1.81658 11.6834 1.18342 11.6834 0.792893 11.2929L0.707107 11.2071C0.316583 10.8166 0.316583 10.1834 0.707107 9.79289L4.5 6Z"
-                                fill="" />
+                                fill="#FF3E79" />
                         </svg>
                     </button>
-                </li>
+                </div>
 
-                <!-- brand Apple -->
-                <li class="carousel__list-item">
-                    <img src="./img/services/apple.svg" alt="Brand Apple">
-                    <button class="carousel__list-item-btn" aria-label="btn brand">
-                        <svg class="carousel__list-item-btn-svg" width="8" height="12" viewBox="0 0 8 12" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
+                <div class="swiper-slide">
+                    <img src="./img/services/samsung.svg" alt="logo Samsung">
+                    <button class="swiper-slide__btn" aria-label="btn dropdown">
+                        <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
                                 d="M4.5 6L0.707106 2.20711C0.316582 1.81658 0.316582 1.18342 0.707107 0.792893L0.792893 0.707107C1.18342 0.316583 1.81658 0.316583 2.20711 0.707107L6.79289 5.29289C7.18342 5.68342 7.18342 6.31658 6.79289 6.70711L2.20711 11.2929C1.81658 11.6834 1.18342 11.6834 0.792893 11.2929L0.707107 11.2071C0.316583 10.8166 0.316583 10.1834 0.707107 9.79289L4.5 6Z"
-                                fill="" />
+                                fill="#FF3E79" />
                         </svg>
                     </button>
-                </li>
+                </div>
 
-                <!-- brand Bosch -->
-                <li class="carousel__list-item">
-                    <img src="./img/services/bosch.svg" alt="Brand Bosch">
-                    <button class="carousel__list-item-btn" aria-label="btn brand">
-                        <svg class="carousel__list-item-btn-svg" width="8" height="12" viewBox="0 0 8 12" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
+                <div class="swiper-slide">
+                    <img src="./img/services/apple.svg" alt="logo Apple">
+                    <button class="swiper-slide__btn" aria-label="btn dropdown">
+                        <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
                                 d="M4.5 6L0.707106 2.20711C0.316582 1.81658 0.316582 1.18342 0.707107 0.792893L0.792893 0.707107C1.18342 0.316583 1.81658 0.316583 2.20711 0.707107L6.79289 5.29289C7.18342 5.68342 7.18342 6.31658 6.79289 6.70711L2.20711 11.2929C1.81658 11.6834 1.18342 11.6834 0.792893 11.2929L0.707107 11.2071C0.316583 10.8166 0.316583 10.1834 0.707107 9.79289L4.5 6Z"
-                                fill="" />
+                                fill="#FF3E79" />
                         </svg>
                     </button>
-                </li>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
 
-            </ul>
 
-            <ul class="carousel__list-points">
-                <li class="carousel__list-points-point carousel__list-points-point__active"></li>
-                <li class="carousel__list-points-point"></li>
-                <li class="carousel__list-points-point"></li>
-                <li class="carousel__list-points-point"></li>
-                <li class="carousel__list-points-point"></li>
-                <li class="carousel__list-points-point"></li>
-                <li class="carousel__list-points-point"></li>
-                <li class="carousel__list-points-point"></li>
-                <li class="carousel__list-points-point"></li>
-            </ul>
-
-            <button class="services__dropdown">
+            <div class="services__dropdown">
                 <svg class="services__dropdown-svg" width="8" height="11" viewBox="0 0 8 11" fill=""
                     xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -190,10 +156,12 @@
                         fill="" />
                 </svg>
                 <p class="services__dropdown-text">Показать все</p>
-            </button>
+            </div>
         </div>
+
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
 
 </body>
