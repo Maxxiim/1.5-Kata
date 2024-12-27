@@ -49,4 +49,4 @@ function showBlockBrands() {
     carouselList.classList.toggle('swiper-wrapper__active')
 }
 
-btnDropDown.addEventListener('click', showBlockBrands)
+btnDropDown.addEventListener('click', showBlockBrands);

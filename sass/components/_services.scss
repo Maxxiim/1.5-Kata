@@ -8,6 +8,10 @@
     @include respond-to(768) {
         height: 100vh;
     }
+
+    @include respond-to(1120) {
+        height: 100%;
+    }
 }
 
 .services__title {
@@ -51,7 +55,7 @@
     margin-bottom: 16px;
 
     @include respond-to(768) {
-        height: 170px;
+        height: 165px;
         display: inline-flex;
         justify-content: flex-start;
         flex-wrap: wrap;
@@ -69,6 +73,7 @@
     @include respond-to(1120) {
         display: flex;
         flex-wrap: wrap;
+        height: 158px;
         max-height: 410px;
     }
 
@@ -159,10 +164,11 @@
 
 }
 
-.swiper-pagination-bullet{
+.swiper-pagination-bullet {
     background: rgb(221, 221, 221);
 }
-.swiper-pagination-bullet-active{
+
+.swiper-pagination-bullet-active {
     background: rgb(181, 182, 188);
 }
 
@@ -170,6 +176,7 @@
     display: none;
 
     @include respond-to(768) {
+        cursor: pointer;
         display: flex;
         align-items: center;
         margin-left: 16px;

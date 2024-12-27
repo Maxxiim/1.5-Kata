@@ -71,6 +71,11 @@ body {
     height: 100vh;
   }
 }
+@media (min-width: 1120px) {
+  .swiper {
+    height: 100%;
+  }
+}
 
 .services__title {
   padding-left: 16px;
@@ -116,7 +121,7 @@ body {
 }
 @media (min-width: 768px) {
   .swiper-wrapper {
-    height: 170px;
+    height: 165px;
     display: inline-flex;
     justify-content: flex-start;
     flex-wrap: wrap;
@@ -136,6 +141,7 @@ body {
   .swiper-wrapper {
     display: flex;
     flex-wrap: wrap;
+    height: 158px;
     max-height: 410px;
   }
 }
@@ -237,6 +243,7 @@ body {
 }
 @media (min-width: 768px) {
   .services__dropdown {
+    cursor: pointer;
     display: flex;
     align-items: center;
     margin-left: 16px;
