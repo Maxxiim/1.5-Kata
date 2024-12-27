@@ -96,6 +96,7 @@
 }
 
 .swiper-slide {
+    user-select: none;
     cursor: pointer;
     width: 240px;
     height: auto;
@@ -164,6 +165,11 @@
 
 }
 
+.swiper-pagination{
+    @include respond-to(768){
+        display: none;
+    }
+}
 .swiper-pagination-bullet {
     background: rgb(221, 221, 221);
 }
@@ -184,7 +190,7 @@
 }
 
 .services__dropdown-svg {
-    display: inline;
+    display: inline-block;
     fill: #41F6D7;
     margin-right: 16px;
     transition: all .19s ease-in-out;

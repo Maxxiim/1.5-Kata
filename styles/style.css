@@ -166,6 +166,7 @@ body {
 }
 
 .swiper-slide {
+  user-select: none;
   cursor: pointer;
   width: 240px;
   height: auto;
@@ -230,6 +231,12 @@ body {
   transition: all 0.2s ease-in-out;
 }
 
+@media (min-width: 768px) {
+  .swiper-pagination {
+    display: none;
+  }
+}
+
 .swiper-pagination-bullet {
   background: rgb(221, 221, 221);
 }
@@ -251,7 +258,7 @@ body {
 }
 
 .services__dropdown-svg {
-  display: inline;
+  display: inline-block;
   fill: #41F6D7;
   margin-right: 16px;
   transition: all 0.19s ease-in-out;
