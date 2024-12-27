@@ -1,21 +1,21 @@
 @font-face {
   font-family: "TT";
-  src: url("TTLakes-Regular.eot");
-  src: local("TT Lakes Regular"), local("TTLakes-Regular"), url("TTLakes-Regular.eot?#iefix") format("embedded-opentype"), url("TTLakes-Regular.woff") format("woff"), url("TTLakes-Regular.ttf") format("truetype");
+  src: url("../fonts/TTLakes-Regular.eot");
+  src: local("TT Lakes Regular"), local("TTLakes-Regular"), url("TTLakes-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/TTLakes-Regular.woff") format("woff"), url("../fonts/TTLakes-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "TT";
-  src: url("TTLakes-Bold.eot");
-  src: local("TT Lakes Bold"), local("TTLakes-Bold"), url("TTLakes-Bold.eot?#iefix") format("embedded-opentype"), url("TTLakes-Bold.woff") format("woff"), url("TTLakes-Bold.ttf") format("truetype");
+  src: url("../fonts/TTLakes-Bold.eot");
+  src: local("TT Lakes Bold"), local("TTLakes-Bold"), url("TTLakes-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/TTLakes-Medium.woff") format("woff"), url("../fonts/TTLakes-Medium.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: "TT";
-  src: url("TTLakes-Medium.eot");
-  src: local("TT Lakes Medium"), local("TTLakes-Medium"), url("TTLakes-Medium.eot?#iefix") format("embedded-opentype"), url("TTLakes-Medium.woff") format("woff"), url("TTLakes-Medium.ttf") format("truetype");
+  src: url("../fonts/TTLakes-Bold.eot");
+  src: local("TT Lakes Medium"), local("TTLakes-Medium"), url("TTLakes-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/TTLakes-Bold.woff") format("woff"), url("../fonts/TTLakes-Bold.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
@@ -51,7 +51,8 @@ a {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "TT", sans-serif;
+  font-weight: 400;
   font-size: 16px;
   color: rgb(27, 28, 33);
   font-weight: 500;
@@ -82,7 +83,7 @@ body {
   padding-top: 16px;
   background: #fff;
   text-transform: uppercase;
-  font-family: Arial, sans-serif;
+  font-family: "TT", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
@@ -92,7 +93,7 @@ body {
 }
 @media (min-width: 768px) {
   .services__title {
-    max-width: 360px;
+    max-width: 380px;
   }
 }
 

@@ -19,7 +19,7 @@
     padding-top: 16px;
     background: #fff;
     text-transform: uppercase;
-    font-family: Arial, sans-serif;
+    font-family: "TT", sans-serif;
     font-size: 16px;
     line-height: 24px;
     font-weight: 500;
@@ -28,7 +28,7 @@
     padding-bottom: 16px;
 
     @include respond-to(768) {
-        max-width: 360px;
+        max-width: 380px;
     }
 }
 
@@ -165,11 +165,12 @@
 
 }
 
-.swiper-pagination{
-    @include respond-to(768){
+.swiper-pagination {
+    @include respond-to(768) {
         display: none;
     }
 }
+
 .swiper-pagination-bullet {
     background: rgb(221, 221, 221);
 }
