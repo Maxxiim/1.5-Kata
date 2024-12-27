@@ -93,6 +93,10 @@
     overflow: visible;
     padding-bottom: 0;
     margin-bottom: 0;
+
+    @include respond-to(869) {
+        height: 100vh;
+    }
 }
 
 .swiper-slide {
