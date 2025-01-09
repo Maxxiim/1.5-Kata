@@ -170,9 +170,9 @@ body {
     height: 100vh;
   }
 }
-@media (min-width: 1120px) {
+@media (min-width: 1119px) {
   .swiper-wrapper__active {
-    height: auto;
+    height: inherit;
     margin-bottom: 27px;
   }
 }

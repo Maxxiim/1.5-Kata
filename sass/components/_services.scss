@@ -98,8 +98,8 @@
         height: 100vh;
     }
 
-    @include respond-to(1120) {
-        height: auto;
+    @include respond-to(1119) {
+        height: inherit;
         margin-bottom: 27px;
     }
 }
