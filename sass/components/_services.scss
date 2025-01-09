@@ -99,7 +99,7 @@
     }
 
     @include respond-to(1120) {
-        height: 100%;
+        height: auto;
         margin-bottom: 27px;
     }
 }
