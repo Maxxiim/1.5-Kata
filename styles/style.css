@@ -170,6 +170,12 @@ body {
     height: 100vh;
   }
 }
+@media (min-width: 1120px) {
+  .swiper-wrapper__active {
+    height: 100%;
+    margin-bottom: 27px;
+  }
+}
 
 .swiper-slide {
   user-select: none;

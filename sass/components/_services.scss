@@ -97,6 +97,11 @@
     @include respond-to(869) {
         height: 100vh;
     }
+
+    @include respond-to(1120) {
+        height: 100%;
+        margin-bottom: 27px;
+    }
 }
 
 .swiper-slide {
